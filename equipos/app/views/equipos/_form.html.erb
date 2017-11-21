@@ -1,0 +1,54 @@
+ <%= form_with(model: equipo, local: true) do |form| %>
+  <% if equipo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(equipo.errors.count, "error") %> prohibited this equipo from being saved:</h2>
+
+      <ul>
+      <% equipo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group col-sm-2">
+    <%= form.label :Placa %>
+    <%= form.text_field :Placa, id: :equipo_Placa %>
+  </div>
+
+  <div class="form-group col-sm-2">
+    <%= form.label :Modelo %>
+    <%= form.text_field :Modelo, id: :equipo_Modelo %>
+  </div>
+
+  <div class="form-group col-sm-2">
+    <%= form.label :Serie %>
+    <%= form.text_field :Serie, id: :equipo_Serie %>
+  </div>
+
+  <div class="form-group col-sm-2">
+    <%= form.label :IdEstadoEquipo %>
+    <%= form.text_field :IdEstadoEquipo, id: :equipo_IdEstadoEquipo %>
+  </div>
+
+  <div class="form-group col-sm-2">
+    <%= form.label :IdTipoEquipo %>
+    <%= form.text_field :IdTipoEquipo, id: :equipo_IdTipoEquipo %>
+  </div>
+
+  <div class="form-group col-sm-2">
+    <%= form.label :IdArea %>
+    <%= form.text_field :IdArea, id: :equipo_IdArea %>
+  </div>
+
+  <div class="form-group col-sm-2">
+    <%= form.label :eliminado %>
+    <%= form.text_field :eliminado, id: :equipo_eliminado %>
+    
+  </div>
+
+    <div class="actions">
+    <%= form.submit "Guardar", :class=>"btn btn-secondary" %>
+    <%= link_to 'Eliminar', equipo, :class => "btn btn-danger", method: :delete, data: { confirm: 'Confirme Eliminación?' } %>
+  </div>
+<% end %>

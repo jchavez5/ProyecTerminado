@@ -1,0 +1,38 @@
+# == Schema Information
+#
+# Table name: vencimientos
+#
+#  id                  :integer          not null, primary key
+#  Equipo_id           :integer
+#  FechaInicion        :date
+#  FechaFinal          :date
+#  Comentario          :string
+#  IdTipoVencimiento   :string
+#  IdEstadoVencimiento :string
+#  Referencia          :string
+#  eliminado           :string
+#  created_at          :datetime         not null
+#  updated_at          :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Equipo: one
+  FechaInicion: 2017-11-19
+  FechaFinal: 2017-11-19
+  Comentario: MyString
+  IdTipoVencimiento: MyString
+  IdEstadoVencimiento: MyString
+  Referencia: MyString
+  eliminado: MyString
+
+two:
+  Equipo: two
+  FechaInicion: 2017-11-19
+  FechaFinal: 2017-11-19
+  Comentario: MyString
+  IdTipoVencimiento: MyString
+  IdEstadoVencimiento: MyString
+  Referencia: MyString
+  eliminado: MyString

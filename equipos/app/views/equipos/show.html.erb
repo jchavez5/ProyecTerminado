@@ -1,0 +1,39 @@
+    <p id="notice"><%= notice %></p>
+ 
+<p>
+  <strong>Placa:</strong>
+  <%= @equipo.Placa %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @equipo.Modelo %>
+</p>
+
+<p>
+  <strong>Serie:</strong>
+  <%= @equipo.Serie %>
+</p>
+
+<p>
+  <strong>Idestadoequipo:</strong>
+  <%= @equipo.IdEstadoEquipo %>
+</p>
+
+<p>
+  <strong>Idtipoequipo:</strong>
+  <%= @equipo.IdTipoEquipo %>
+</p>
+
+<p>
+  <strong>Idarea:</strong>
+  <%= @equipo.IdArea %>
+</p>
+
+<p>
+  <strong>Eliminado:</strong>
+  <%= @equipo.eliminado %>
+</p>
+
+<%= link_to 'Edit', edit_equipo_path(@equipo) ,:class=>"btn btn-secondary"%> |
+<%= link_to 'Back', equipos_path,:class=>"btn btn-secondary" %>

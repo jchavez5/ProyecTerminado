@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: equipos
+#
+#  id             :integer          not null, primary key
+#  Placa          :string
+#  Modelo         :string
+#  Serie          :string
+#  IdEstadoEquipo :string
+#  IdTipoEquipo   :string
+#  IdArea         :string
+#  eliminado      :string
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Placa: 
+  Modelo: MyString
+  Serie: MyString
+  IdEstadoEquipo: MyString
+  IdTipoEquipo: MyString
+  IdArea: MyString
+  eliminado: MyString
+
+two:
+  Placa: 
+  Modelo: MyString
+  Serie: MyString
+  IdEstadoEquipo: MyString
+  IdTipoEquipo: MyString
+  IdArea: MyString
+  eliminado: MyString

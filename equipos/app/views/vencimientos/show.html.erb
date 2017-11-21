@@ -1,0 +1,35 @@
+      <p id="notice"><%= notice %></p>
+ 
+<p>
+  <strong>Equipo:</strong>
+   <%= @vencimiento.Equipo %>
+</p>
+
+<p>
+  <strong>FechaInicion:</strong>
+  <%= @vencimiento.FechaInicion %>
+</p>
+
+<p>
+  <strong>FechaFinal:</strong>
+ <%= @vencimiento.FechaFinal %>
+</p>
+
+<p>
+  <strong>Comentario:</strong>
+<%= @vencimiento.Comentario %> 
+</p> 
+
+
+<p>
+  <strong>IdEstadoVencimiento:</strong>
+<%= @vencimiento.IdEstadoVencimiento %>
+</p>
+
+<p>
+  <strong>Referencia:</strong>
+<%= @vencimiento.Referencia %>
+</p>
+
+
+<%= link_to 'Back', equipos_path,:class=>"btn btn-secondary" %>

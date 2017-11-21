@@ -1,0 +1,45 @@
+   <div class="container">
+ <p id="notice"><%= notice %></p>
+
+<h4>Vencimientos</h4>
+
+<div class="navbar "> 
+<%= link_to 'Nuevo', new_vencimiento_path,class:'btn btn-primary btn-sm' %>
+</div>
+<table class="table table-bordered">
+  <thead >
+    <tr>
+      <th>id</th>
+      <th>Fechainicion</th>
+      <th>Fechafinal</th>
+      <th>Comentario</th>
+      <th>Idtipovencimiento</th>
+      <th>Idestadovencimiento</th>
+      <th>Referencia</th>
+      <th>Eliminado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vencimientos.each do |vencimiento| %>
+      <tr>
+        <td><%= vencimiento.Equipo %></td>
+        <td><%= vencimiento.FechaInicion %></td>
+        <td><%= vencimiento.FechaFinal %></td>
+        <td><%= vencimiento.Comentario %></td>
+        <td><%= vencimiento.IdTipoVencimiento %></td>
+        <td><%= vencimiento.IdEstadoVencimiento %></td>
+        <td><%= vencimiento.Referencia %></td>
+        <td><%= vencimiento.eliminado %></td>
+        <td><%= link_to 'Show', vencimiento %></td>
+        <td><%= link_to 'Edit', edit_vencimiento_path(vencimiento) %></td>
+        <td><%= link_to 'Destroy', vencimiento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</table>
+
+<br>
+
